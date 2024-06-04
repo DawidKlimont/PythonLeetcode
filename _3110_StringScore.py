@@ -6,6 +6,4 @@ def scoreOfString(s: str) -> int:
         index += 1
     return solution
     
-input = "hello"
-output = scoreOfString(input)
-print(output)
+print(scoreOfString("hello"))
