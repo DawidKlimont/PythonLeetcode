@@ -1,4 +1,5 @@
-def minPartitions(n: str) -> int:
-    return int(max(n))
+class Solution:
+    def minPartitions(n: str) -> int:
+        return int(max(n))
 
-print(minPartitions("32"))
+print(Solution().minPartitions("32"))

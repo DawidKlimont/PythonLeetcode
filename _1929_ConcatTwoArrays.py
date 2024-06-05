@@ -1,7 +1,7 @@
 from typing import List
 
+class Solution:
+    def getConcatenation(self, nums: List[int]) -> List[int]:
+        return nums+nums
 
-def getConcatenation(nums: List[int]) -> List[int]:
-    return nums+nums
-
-print(getConcatenation([1,2,1]))
+print(Solution().getConcatenation([1,2,1]))
