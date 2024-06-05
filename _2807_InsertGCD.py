@@ -19,18 +19,19 @@ def insertGreatestCommonDivisors( head: Optional[ListNode]) -> Optional[ListNode
         current = next_current
     return head
 
-val = [18,6,10,3,69,12,451,515523,1215]
-head = ListNode(val[0])
-prev = head
-for i in range(1,len(val)):
-    cur = ListNode(val[i])
-    prev.next = cur
-    prev = cur
+def test(val):
+    head = ListNode(val[0])
+    prev = head
+    for i in range(1,len(val)):
+        cur = ListNode(val[i])
+        prev.next = cur
+        prev = cur
 
-cur = insertGreatestCommonDivisors(head)
-result=[]
-while cur:
-    result.append(cur.val)
-    cur = cur.next
+    cur = insertGreatestCommonDivisors(head)
+    result=[]
+    while cur:
+        result.append(cur.val)
+        cur = cur.next
+    return result
 
-print(result)
+print(test([18,6,10,3,69,12,451,515523,1215]))
