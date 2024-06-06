@@ -1,6 +1,5 @@
 from typing import List
 
-
 class Solution:
     def maxWidthOfVerticalArea(self, points: List[List[int]]) -> int:
         total = []
