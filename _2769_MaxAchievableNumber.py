@@ -1,4 +1,5 @@
-def theMaximumAchievableX(num: int, t: int) -> int:
+class Solution:
+    def theMaximumAchievableX(num: int, t: int) -> int:
         return num+t*2
         
-print(theMaximumAchievableX(4,1))
+print(Solution().theMaximumAchievableX(4,1))
