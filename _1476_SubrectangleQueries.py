@@ -15,7 +15,7 @@ class SubrectangleQueries:
         return self.rectangle[row][col]
     
 def test():
-    output=[]
+    output=[None]
     sub = SubrectangleQueries([[1,2,1],[4,3,4],[3,2,1],[1,1,1]])
     output.append(sub.getValue(0,2))
     output.append(sub.updateSubrectangle(0,0,3,2,5))
