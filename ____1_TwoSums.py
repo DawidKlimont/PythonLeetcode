@@ -13,11 +13,7 @@ class Solution:
 
 def test(instace: Solution, iteration: int):
     start = process_time()
-    percent_step = 34
-    step_val = int(iteration/(100/percent_step))
     for i in range(iteration):
-        if(i%step_val==0) and i>0:
-           print(str(int((i/step_val)*percent_step))+"% done "+str(int(process_time()-start))+" seconds passed") 
         instance.twoSum([2,7,11,15],9)
     result = process_time()-start
     return result
