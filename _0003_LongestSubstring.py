@@ -6,17 +6,12 @@ class Solution:
         start = 0
         current = dict()
         for i,char in enumerate(s):
-            if char in current:
-                if current[char]<start:
-                    current[char]=i
-                    solution=max(solution, i-start+1)
-                else:
-                    solution=max(solution, i-start)
-                    start = current[char]+1
-                    current[char]=i
+            if char in current and current[char]>=start:
+                solution=max(solution, i-start)
+                start = current[char]+1
             else:
                 solution=max(solution, i-start+1)
-                current[char]=i
+            current[char]=i
         return solution
 
         
